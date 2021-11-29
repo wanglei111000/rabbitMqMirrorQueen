@@ -1,0 +1,8 @@
+spring:
+  rabbitmq:
+    addresses: 192.168.217.128:5672,192.168.217.135:5672,192.168.217.136:5672
+    username: developer
+    password: dev123456
+    virtual-host: /MSA
+server:
+  port: 8888
