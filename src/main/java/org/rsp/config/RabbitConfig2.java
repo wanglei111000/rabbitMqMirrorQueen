@@ -57,7 +57,8 @@ public class RabbitConfig2 {
     @Bean
     public ConnectionFactory connectionFactory() {
         CachingConnectionFactory connectionFactory = new CachingConnectionFactory();
-        connectionFactory.setAddresses(addresses);
+        //connectionFactory.setAddresses(addresses);
+        connectionFactory.setHost("192.168.217.200");
         connectionFactory.setUsername(username);
         connectionFactory.setPassword(password);
         connectionFactory.setVirtualHost("/MSA");
